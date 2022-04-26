@@ -61,6 +61,7 @@ spec:
           - name: GTS_DB_PASSWORD
             value: {{ .Values.extdb.password }}
           {{- end }}
+          {{- toYaml .Values.gotosocial.extraConfig | nindent 10 }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"

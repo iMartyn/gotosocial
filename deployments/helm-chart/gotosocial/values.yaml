@@ -21,6 +21,9 @@ gotosocial:
   #    (you still need to set postgresql.enabled below too)
   # - `postgres-ext` means postgres deployed separately
   dbType: ephemeral
+  extraConfig:
+  - name: GTS_ACCOUNTS_REGISTRATION_OPEN
+    value: false
 
 # Fill this out if you use postgres-ext
 extdb:
