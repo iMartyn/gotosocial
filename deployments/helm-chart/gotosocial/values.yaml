@@ -23,7 +23,7 @@ gotosocial:
   dbType: ephemeral
   extraConfig:
   - name: GTS_ACCOUNTS_REGISTRATION_OPEN
-    value: false
+    value: "false"
 
 # Fill this out if you use postgres-ext
 extdb:
